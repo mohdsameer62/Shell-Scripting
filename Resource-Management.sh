@@ -22,7 +22,7 @@ echo "💾 Filesystem Usage:"
 df -h "${FILESYSTEMS_TO_MONITOR[@]}"
 echo ""
 echo "--- Top 5 Processes (by CPU) ---"
-ps aux --sort=-%cpu | head -n 10
+ps aux --sort=-%cpu | head -n 5
 echo ""
 echo "--- Top 5 Processes (by Memory) ---"
-ps aux --sort=-%mem | head -n 10
+ps aux --sort=-%mem | head -n 5
